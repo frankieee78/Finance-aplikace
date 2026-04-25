@@ -30,7 +30,7 @@ export default async function handler(req, res) {
       system_instruction: system ? { parts: [{ text: system }] } : undefined,
       contents,
       generationConfig: {
-        maxOutputTokens: 1024,
+        maxOutputTokens: 8192,
         temperature: 0.7,
       },
     };
